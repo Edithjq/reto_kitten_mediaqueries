@@ -1,0 +1,52 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	/*imagen por defecto*/
+	background-image: url(../img/sunny-day.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center center;
+	background-attachment: fixed;	
+}
+	
+.cat{
+	/*width: 60%;*/
+	display: inline-block;
+	position: absolute;
+	left: 25%;
+	bottom: 0px;
+	/*outline: 1px solid red;*/
+} 
+
+/*medida de una tablet*/
+@media screen and (max-width: 768px){  
+	body{
+		background-image: url("../img/night.jpg");
+
+	}
+	/*imagen de gatito*/
+	.cat{
+   		content: url("../img/kitten-small.png");   
+   }
+}
+/*medida de un movile*/
+@media screen and (max-width: 425px){  
+	body{
+		background-image: url("../img/dawn.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:center center;
+		background-attachment: fixed;	
+	}
+
+	.cat{
+		content: url("../img/kitten-large.png");
+		width: 80%;
+	}
+}
+
+/*center center cover no-repeat fixed*/
